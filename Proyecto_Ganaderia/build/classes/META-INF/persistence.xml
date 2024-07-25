@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="Proyecto_GanaderiaPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>modelos.Historialparcela</class>
+    <class>modelos.Datosnegocio</class>
+    <class>modelos.Detallefactura</class>
+    <class>modelos.Enfermedad</class>
+    <class>modelos.Animal</class>
+    <class>modelos.Historialenf</class>
+    <class>modelos.Cliente</class>
+    <class>modelos.Alimentos</class>
+    <class>modelos.Medicamento</class>
+    <class>modelos.Tipoganaderia</class>
+    <class>modelos.Factura</class>
+    <class>modelos.Animalmedicamento</class>
+    <class>modelos.Parcela</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/ganaderia"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+    </properties>
+  </persistence-unit>
+</persistence>
